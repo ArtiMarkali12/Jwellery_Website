@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background: #f0f0f0;
+  font-family: "Segoe UI", sans-serif;
+}
+/*body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+} */
+.home {
+  scrollbar-width: none;
+  /* background-color: aliceblue; */
+}
+.card {
+  background-color: aliceblue;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  /* background-color: white; */
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+/* ---------------------------------------------------------------- */
+
+header {
+  grid-column: 1/3;
+  display: flex; /* row wise data shift krto (nav bar cha) */
+  flex-direction: column;
+  justify-content: space-around; /* nav bar mdhlya data chya around space denyasathi */
+  align-items: center; /* nav bar center la aanto*/
+}
+header > img {
+  height: 100%;
+}
+header > nav {
+  display: flex; /* nav bar chi default padding nighun geli (mdhli space nighun geli) */
+  gap: 50px; /* nav bar chya data mdhe space create krto */
+
+  padding: 30px 60px; /* nav bar chi size vadhvto*/
+}
+
+header > nav select,
+nav button {
+  background: transparent;
+  border: none;
+  font-weight: 800;
+}
+header > nav select:focus {
+  outline: none;
+}
+
+.nav-links a:hover {
+  background-color: slategray;
+}
+
+/* ------------------------------------------------------------------ */
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 8px 15px;
+  flex: 1;
+  width: 700px;
+  max-width: 700px;
+  background-color: #f9f9f9;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #444;
+}
+
+.search-container i {
+  color: #621c1c;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.icons i {
+  color: #621c1c;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bag-icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #621c1c;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+nav > a {
+  color: black;
+  font-weight: 800;
+  text-decoration-line: none;
+}
+main {
+  background-color: white;
+}
+main > .box {
+  height: 50px;
+  width: 100%;
+  /* border-radius: 2px solid red; */
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  /* background-color:lavender; */
+  background-color: mintcream;
+  background-image: radial-gradient(
+    circle farthest-corner at 18.7% 37.8%,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(225, 234, 238, 1) 90%
+  );
+}
+.box > div {
+  color: brown;
+}
+.para {
+  display: flex;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.para > div {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: brown;
+}
+.para > span {
+  display: flex;
+  align-items: center;
+}
+.filter_line {
+  height: 50px;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  /* justify-content:space-between;  */
+  align-items: center;
+  padding-left: 50px;
+  gap: 20px;
+}
+.filter {
+  height: 35px;
+  width: 110px;
+  /* background-color: red; */
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-top: 8px;
+}
+.filter > i {
+  padding-left: 10px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+filter > #filter {
+  padding-right: 10px;
+}
+
+.price {
+  height: 35px;
+  width: 170px;
+  /* background-color: red; */
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-top: 8px;
+}
+.price > i {
+  padding-left: 10px;
+  padding-top: 30px;
+  font-size: 20px;
+  color: orange;
+}
+
+.gift {
+  height: 35px;
+  width: 160px;
+  /* background-color: red; */
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-top: 8px;
+}
+.gift > i {
+  padding-left: 10px;
+  padding-top: 30px;
+  font-size: 20px;
+  /* color: orange; */
+}
+.women {
+  height: 35px;
+  width: 160px;
+  /* background-color: red; */
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-top: 8px;
+  text-align: center;
+}
+.women > i {
+  padding-left: 10px;
+  padding-top: 30px;
+  font-size: 20px;
+  /* color: orange; */
+}
+.show_more {
+  height: 35px;
+  width: 160px;
+  /* background-color: red; */
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-top: 8px;
+}
+.show_more > i {
+  padding-left: 10px;
+  padding-top: 30px;
+  font-size: 20px;
+  /* color: orange; */
+}
+
+/* ---------------------------------------------------------------------- */
+
+.container {
+  height: 600px;
+  width: 1250px;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#banner > img {
+  height: 550px;
+  width: 100%;
+}
+.cont1 {
+  height: 600px;
+  width: 100%;
+  background-color: aqua;
+  padding-top: 10px;
+  padding-left: 40px;
+  display: flex;
+  gap: 40px;
+  border-radius: 73px;
+  background: aliceblue;
+  box-shadow: 36px 36px 71px aliceblue, -36px -36px 71px #f4f4f4;
+  
+}
+.cont1 > .img1 {
+  height: 470px;
+  width: 550px;
+  /* background-color: red; */
+  /* padding-left: 30px; */
+  border-radius: 20px;
+  background-image: url("./Images/rings/r11.jpg");
+}
+.cont1 > .img2 {
+  height: 470px;
+  width: 550px;
+  /* background-color: red; */
+  /* padding-left: 30px; */
+  background-color: chartreuse;
+  border-radius: 20px;
+  background-image: url("./Images/rings/r3.webp");
+  background-position: center;
+}
+
+/* ----------------------------------------------------------------- */
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#banner > img {
+  height: 550px;
+  width: 100%;
+  animation: slideFadeIn 1.5s ease-out forwards;
+}
+
+/* --------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------- */
+
+.img1,
+.img2 {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.img1:hover,
+.img2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* --------------------------------------------------------------------- */
+
+.info{
+  padding-top:30px;
+  padding-bottom: 60px;
+}
+
+
+
+.cont2{
+  
+  height: 500px;
+  width: 100%;
+  border: 2px solid red;
+  padding-top: 20px;
+  background-color: aliceblue;
+background:aliceblue;
+box-shadow:  13px 13px 18px #fbf5f5,
+             -13px -13px 18px #ffffff;
+  
+}
+.cont2>p{
+  font-family:sans-serif;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+.cont2>.circle{
+
+  height: 400px;
+  width: 100%;
+/* background-color: aquamarine;  */
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+
+
+}
+.circle1{
+  height: 250px;
+  width: 250px;
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  background-image: url("./Images/rings/r8.avif");
+  background-size: cover;
+  
+}
+.circle2{
+  height: 250px;
+  width: 250px;
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  background-image: url("./Images/rings/r5.jpg");
+  background-size: cover;
+}
+.circle3{
+  height: 250px;
+  width: 250px;
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  background-image: url("./Images/rings/r9.webp");
+   background-size: cover;
+}
+
+.circle4{
+  height: 250px;
+  width: 250px;
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  background-image: url("./Images/rings/r2.webp");
+   background-size: cover;
+}
+
+
+/* --------------------------------------------------------------- */
+
+
+@keyframes swap1 {
+  0%   { background-image: url("./Images/rings/r8.avif"); }
+  33%  { background-image: url("./Images/rings/r10.avif"); }
+  66%  { background-image: url("./Images/ring.jfif"); }
+  100% { background-image: url("./Images/ring1.jpg"); }
+}
+
+@keyframes swap2 {
+  0%   { background-image: url("./Images/rings/r5.jpg"); }
+  33%  { background-image: url("./Images/rings/r9.webp"); }
+  66%  { background-image: url("./Images/rings/r2.webp"); }
+  100% { background-image: url("./Images/rings/r5.jpg"); }
+}
+
+@keyframes swap3 {
+  0%   { background-image: url("./Images/rings/r9.webp"); }
+  33%  { background-image: url("./Images/rings/r2.webp"); }
+  66%  { background-image: url("./Images/rings/r8.avif"); }
+  100% { background-image: url("./Images/rings/r9.webp"); }
+}
+
+@keyframes swap4 {
+  0%   { background-image: url("./Images/rings/r2.webp"); }
+  33%  { background-image: url("./Images/rings/r8.avif"); }
+  66%  { background-image: url("./Images/rings/r5.jpg"); }
+  100% { background-image: url("./Images/ring11.webp"); }
+}
+
+.circle1, .circle2, .circle3, .circle4 {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.circle1 {
+  animation-name: swap1;
+}
+
+.circle2 {
+  animation-name: swap2;
+}
+
+.circle3 {
+  animation-name: swap3;
+}
+
+.circle4 {
+  animation-name: swap4;
+}
+
+
+
+/* --------------------------------------------------------------- */

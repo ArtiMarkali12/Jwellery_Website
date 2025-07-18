@@ -1,0 +1,624 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+.home {
+  scrollbar-width: none;
+  background-color: aliceblue;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  /* background-color: white; */
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+/* ---------------------------------------------------------------- */
+
+header {
+  grid-column: 1/3;
+  display: flex; /* row wise data shift krto (nav bar cha) */
+  flex-direction: column;
+  justify-content: space-around; /* nav bar mdhlya data chya around space denyasathi */
+  align-items: center; /* nav bar center la aanto*/
+}
+header > img {
+  height: 100%;
+}
+header > nav {
+  display: flex; /* nav bar chi default padding nighun geli (mdhli space nighun geli) */
+  gap: 50px; /* nav bar chya data mdhe space create krto */
+
+  padding: 30px 60px; /* nav bar chi size vadhvto*/
+}
+
+header > nav select,
+nav button {
+  background: transparent;
+  border: none;
+  font-weight: 800;
+}
+header > nav select:focus {
+  outline: none;
+}
+
+.nav-links a:hover {
+  background-color: slategray;
+}
+
+/* ------------------------------------------------------------------ */
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 8px 15px;
+  flex: 1;
+  width: 700px;
+  max-width: 700px;
+  background-color: #f9f9f9;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #444;
+}
+
+.search-container i {
+  color: #621c1c;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.icons i {
+  color: #621c1c;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bag-icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #621c1c;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+nav > a {
+  color: black;
+  font-weight: 800;
+  text-decoration-line: none;
+}
+
+/* --------------------------------------------------------- */
+
+.cont {
+  height: 600px;
+  width: 1250px;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#banner > img {
+  height: 550px;
+  width: 100%;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#banner > img {
+  height: 550px;
+  width: 100%;
+  animation: slideFadeIn 5s ease-out forwards;
+}
+
+
+@keyframes swap4 {
+  0%   { background-image: url("./Images/earring/ban5.jpg"); }
+  33%  { background-image: url("./Images/earring/ban2.jpg"); }
+  66%  { background-image: url("./Images/earring/ban3.jfif"); }
+  100% { background-image: url("./Images/earring/ban4.jpg"); }
+}
+
+#banner {
+  height: 550px;
+  width: 100%;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#banner {
+  animation-name: swap4;
+}
+
+/* ------------------------------------------------------------- */
+
+.container {
+  height: 500px;
+  width: 1250px;
+  border-radius: 57px;
+  background: #e0e0e0;
+  box-shadow: 29px 29px 75px #b8b8b8, -29px -29px 75px #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 30px;
+  background-color: aliceblue;
+}
+.container > .sec1 {
+  height: 500px;
+  width: 260px;
+
+  border-radius: 10px;
+  background-size: cover;
+  background-position-x: center;
+  padding-left: 20px;
+  overflow: hidden;
+  background-image: url("./Images/ear15.avif");
+}
+
+/* ------------------------------------------------------- */
+.container > .sec2 > .img {
+  height: 100%;
+  background-size: cover;
+  background-position-x: center;
+
+  width: 100%;
+  background-image: url("./Images/ear14.jpeg");
+}
+/* ----------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+
+.container > .sec2 {
+  height: 500px;
+  width: 280px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.container > .sec3 {
+  height: 500px;
+  width: 280px;
+
+  border-radius: 10px;
+  background-image: url("./Images/ear8.avif");
+  background-size: cover;
+  background-position-x: center;
+}
+.container > .sec4 {
+  height: 500px;
+  width: 280px;
+
+  border-radius: 10px;
+  background-image: url("./Images/ear10.jpg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.label_line {
+  height: 60px;
+  width: 1250px;
+
+  display: flex;
+  /* justify-content:space-evenly; */
+  /* align-items: center; */
+  /* gap: 220px; */
+  gap: 40px;
+}
+.label_line1 {
+  height: 60px;
+  width: 300px;
+
+  /* padding-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label_line2 {
+  height: 60px;
+  width: 300px;
+
+  /* padding-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label_line3 {
+  height: 60px;
+  width: 300px;
+
+  /* padding-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label_line4 {
+  height: 60px;
+  width: 300px;
+
+  /* padding-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order {
+  height: 40px;
+  width: 1250px;
+
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 40px;
+}
+.order1 {
+  height: 40px;
+  width: 280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order1 > .btn1 {
+  background-color: teal;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 25px;
+  position: relative;
+  left: 0px;
+  border-radius: 5px;
+}
+.order1 > .btn1:active {
+  background-color: #444;
+}
+.order2 {
+  height: 40px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order2 > .btn2 {
+  background-color: teal;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 25px;
+  position: relative;
+  left: 0px;
+  border-radius: 5px;
+}
+
+.order2 > .btn2:active {
+  background-color: #444;
+}
+.order3 {
+  height: 40px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order3 > .btn3 {
+  background-color: teal;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 25px;
+  position: relative;
+  left: 0px;
+  border-radius: 5px;
+}
+
+.order3 > .btn3:active {
+  background-color: #444;
+}
+.order4 {
+  height: 40px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order4 > .btn4 {
+  background-color: teal;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+
+.order4 > .btn4:active {
+  background-color: #444;
+}
+
+.container1 {
+  height: 500px;
+  width: 1250px;
+  border-radius: 57px;
+  background: #e0e0e0;
+  box-shadow: 29px 29px 75px #b8b8b8, -29px -29px 75px #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  background-color: aliceblue;
+}
+.container1 > .sec11 {
+  height: 500px;
+  width: 260px;
+
+  border-radius: 10px;
+  background-image: url("./Images/ear21.webp");
+  background-size: cover;
+  background-position-x: center;
+  padding-left: 20px;
+}
+.container1 > .sec22 {
+  height: 500px;
+  width: 280px;
+
+  border-radius: 10px;
+  background-image: url("./Images/ear19.jfif");
+  background-size: cover;
+  background-position-x: center;
+}
+.container1 > .sec33 {
+  height: 500px;
+  width: 280px;
+
+  border-radius: 10px;
+  background-image: url("./Images/ear20.jpg");
+  background-size: cover;
+  background-position-x: center;
+}
+.container1 > .sec44 {
+  height: 500px;
+  width: 280px;
+
+  border-radius: 10px;
+  background-image: url("./Images/ear13.jpeg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.container2 {
+  height: 500px;
+  width: 1250px;
+  border-radius: 57px;
+  background: #e0e0e0;
+  box-shadow: 29px 29px 75px #b8b8b8, -29px -29px 75px #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  background-color: aliceblue;
+}
+.container2 > .sec111 {
+  height: 500px;
+  width: 260px;
+
+  border-radius: 10px;
+  background-image: url("./Images/earring1.webp");
+  background-size: cover;
+  background-position-x: center;
+  padding-left: 20px;
+}
+.container2 > .sec222 {
+  height: 500px;
+  width: 280px;
+
+  border-radius: 10px;
+  background-image: url("./Images/ering1.webp");
+  background-size: cover;
+  background-position: center;
+  /* background-position-x: center; */
+}
+.container2 > .sec333 {
+  height: 500px;
+  width: 280px;
+
+  border-radius: 10px;
+  background-image: url("./Images/ering2.webp");
+  background-size: cover;
+  background-position: center;
+  /* background-position-x: center; */
+}
+.container2 > .sec444 {
+  height: 500px;
+  width: 280px;
+
+  border-radius: 10px;
+  background-image: url("./Images/ering6.jpg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+/* -------------------container (sathi)  ------------------------------------- */
+
+.container > div {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Overlay on Hover */
+.container > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+/* Show overlay on hover */
+.container > div:hover::after {
+  opacity: 1;
+}
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec1:hover,
+.sec2:hover,
+.sec3:hover,
+.sec4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* -----------------------container1 sathi-------------------------------------- */
+.container1 > div {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Overlay on Hover */
+.container1 > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+/* Show overlay on hover */
+.container1 > div:hover::after {
+  opacity: 1;
+}
+
+.container1 > div:hover::after {
+  opacity: 1;
+}
+.sec11,
+.sec22,
+.sec33,
+.sec44 {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec11:hover,
+.sec22:hover,
+.sec33:hover,
+.sec44:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.container2 > div {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Overlay on Hover */
+.container2 > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+/* Show overlay on hover */
+.container2 > div:hover::after {
+  opacity: 1;
+}
+
+.container2 > div:hover::after {
+  opacity: 1;
+}
+.sec111,
+.sec222,
+.sec333,
+.sec444 {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec111:hover,
+.sec222:hover,
+.sec333:hover,
+.sec444:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------------------------------------------- */

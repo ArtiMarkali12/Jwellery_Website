@@ -1,0 +1,482 @@
+ body {
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+.home{
+  scrollbar-width: none;
+}
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+
+
+
+/* ---------------------------------------------------------------- */
+
+
+header{
+  
+    grid-column: 1/3;
+    display: flex;    /* row wise data shift krto (nav bar cha) */
+    flex-direction: column;
+    justify-content: space-around;   /* nav bar mdhlya data chya around space denyasathi */
+    align-items: center;            /* nav bar center la aanto*/
+    
+}
+header>img{
+    height: 100%;
+}
+header>nav
+{
+  
+    display: flex;   /* nav bar chi default padding nighun geli (mdhli space nighun geli) */
+    gap: 50px;          /* nav bar chya data mdhe space create krto */
+   
+    padding: 30px 60px;              /* nav bar chi size vadhvto*/
+}
+
+
+header>nav select,nav button{
+    background: transparent;
+    border: none;
+    font-weight: 800;
+   
+}
+header>nav select:focus{
+   outline: none;
+  
+}
+
+.nav-links a:hover {
+      background-color: slategray;
+    }
+
+    nav> a{
+      color: black;
+      font-weight: 800;
+     text-decoration-line:none;
+    }
+
+/* ------------------------------------------------------------------ */
+
+
+
+
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+  padding: 8px 15px;
+  flex: 1;
+  width: 800px;
+  max-width: 700px;
+  background-color: #f9f9f9;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #444;
+}
+
+.search-container i {
+  color: #621c1c;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.icons i {
+  color: #621c1c;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bag-icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #621c1c;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+
+
+   
+    .scroll-container {
+      width: 100%;
+      overflow: hidden;
+      background: #fff;
+      padding: 10px 0;
+    }
+
+    .scroll-content {
+      display: flex;
+      gap: 10px;
+      animation: scroll-left 8s linear infinite;
+    }
+
+    .scroll-container:hover .scroll-content {
+      animation-play-state: paused; /* Optional: Pause on hover */
+    }
+
+    .scroll-content img {
+      width: 100%px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+     
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-40%);
+      }
+    }
+
+    /* Duplicate the content to ensure smooth looping */
+    .scroll-wrapper {
+      display: flex;
+      width: max-content;
+
+    }
+  .home{
+    background-color:white;
+  }
+  main{
+   
+    
+  }
+  .back{
+  
+    background-image: url("./Images/back.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .back>h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+  .back>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color: white;
+  }
+  .double{
+    height: 600px;
+    width: 1240px;
+  
+    display: flex;
+  gap: 20px;
+  }
+  .double>.b1{
+    height: 600px;
+    width: 500px;
+   
+   background-image: url("./Images/j2.webp");
+   background-size: cover;
+   display:flex;
+   justify-content: center;
+    border-radius: 15px;
+
+  }
+  .double>.b2{
+    height: 600px;
+    width: 650px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+   
+  }
+  .b2>.add_img1{
+     height: 290px;
+    width: 600px;
+   
+    background-image: url("./Images/img2.jpg");
+    background-size: cover;
+     border-radius: 15px;
+  }
+  .b2>.add_img2{
+     height: 290px;
+    width: 600px;
+    
+    background-image: url("./Images/a1.jfif");
+    background-size: cover;
+    border-radius: 15px;
+  }
+.match>.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box>h1{
+  font-size: 50px;
+}
+.box>p{
+  font-size: 40px;
+}
+.container {
+  height: 500px;
+  width: 1250px;
+  border-radius: 57px;
+background: #e0e0e0;
+box-shadow:  29px 29px 75px #b8b8b8,
+             -29px -29px 75px #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.container>.sec1{
+  height: 500px;
+  width: 260px;
+  
+  border-radius: 10px;
+  background-image: url("./Images/ring1.jpg");
+ background-size: cover;
+ background-position-x: center;
+ padding-left: 20px;
+ 
+}
+.container>.sec2{
+  height: 500px;
+  width: 280px;
+  
+   border-radius: 10px;
+   background-image: url("./Images/payndle1.jpg");
+ background-size: cover;
+ background-position-x: center;
+
+}
+.container>.sec3{
+  height: 500px;
+  width: 280px;
+  
+   border-radius: 10px;
+   background-image: url("./Images/banner8.jpg");
+ background-size: cover;
+ background-position-x: center;
+
+}
+.container>.sec4{
+  height: 500px;
+  width: 280px;
+  
+   border-radius: 10px;
+    background-image: url("./Images/b2.jpg");
+ background-size: cover;
+ background-position-x: center;
+}
+
+.label_line{
+  height: 60px;
+  width: 1250px;
+  
+  display: flex;
+  /* justify-content:space-evenly; */
+  /* align-items: center; */
+  /* gap: 220px; */
+  gap: 40px;
+ 
+}
+.label_line1{
+  height: 60px;
+  width: 300px;
+  
+  /* padding-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.label_line2{
+  height: 60px;
+  width: 300px;
+  
+  /* padding-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.label_line3{
+  height: 60px;
+  width: 300px;
+  
+  /* padding-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.label_line4{
+  height: 60px;
+  width: 300px;
+ 
+  /* padding-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.order{
+  height: 40px;
+  width: 1250px;
+  
+  display: flex;
+  
+  gap: 40px;
+}
+.order1{
+  height: 40px;
+  width: 280px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.order1>.btn1
+{
+    
+    background-color:red;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    position: relative;
+    left: 0px;
+    border-radius: 5px;
+}
+.order1>.btn1:active{
+  background-color: #444;
+}
+.order2{
+  height: 40px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order2>.btn2
+{
+    
+    background-color: red;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    position: relative;
+    left: 0px;
+    border-radius: 5px;
+}
+
+.order2>.btn2:active{
+  background-color: #444;
+}
+.order3{
+  height: 40px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order3>.btn3
+{
+    
+    background-color: red;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    position: relative;
+    left: 0px;
+    border-radius: 5px;
+}
+
+.order3>.btn3:active{
+  background-color: #444;
+}
+.order4{
+  height: 40px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order4>.btn4
+{
+    
+    background-color: red;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+.order4>.btn4:active{
+  background-color: #444;
+}

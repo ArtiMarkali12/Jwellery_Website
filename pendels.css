@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+.home {
+  scrollbar-width: none;
+  background-color: aliceblue;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  /* background-color: white; */
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+/* ---------------------------------------------------------------- */
+
+header {
+  grid-column: 1/3;
+  display: flex; /* row wise data shift krto (nav bar cha) */
+  flex-direction: column;
+  justify-content: space-around; /* nav bar mdhlya data chya around space denyasathi */
+  align-items: center; /* nav bar center la aanto*/
+}
+header > img {
+  height: 100%;
+}
+header > nav {
+  display: flex; /* nav bar chi default padding nighun geli (mdhli space nighun geli) */
+  gap: 50px; /* nav bar chya data mdhe space create krto */
+
+  padding: 30px 60px; /* nav bar chi size vadhvto*/
+}
+
+header > nav select,
+nav button {
+  background: transparent;
+  border: none;
+  font-weight: 800;
+}
+header > nav select:focus {
+  outline: none;
+}
+
+.nav-links a:hover {
+  background-color: slategray;
+}
+
+/* ------------------------------------------------------------------ */
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 8px 15px;
+  flex: 1;
+  width: 700px;
+  max-width: 700px;
+  background-color: #f9f9f9;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #444;
+}
+
+.search-container i {
+  color: #621c1c;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.icons i {
+  color: #621c1c;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bag-icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #621c1c;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+nav > a {
+  color: black;
+  font-weight: 800;
+  text-decoration-line: none;
+}
+
+.cont {
+  height: 600px;
+  width: 1250px;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#banner > img {
+  height: 550px;
+  width: 100%;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#banner > img {
+  height: 550px;
+  width: 100%;
+  animation: slideFadeIn 5s ease-out forwards;
+}
+
+/* -------------------------------------------------------------- */
+
+
+.cont > #banner {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Overlay on Hover */
+.cont > #banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+/* Show overlay on hover */
+.cont> #banner:hover::after {
+  opacity: 1;
+}
+
+
+
+
+/* --------------------------------------------------------------- */
+
+.cont1 {
+  height: 600px;
+  width: 100%;
+  background-color: aqua;
+  padding-top: 10px;
+  padding-left: 40px;
+  display: flex;
+  gap: 40px;
+  border-radius: 73px;
+  background: aliceblue;
+  box-shadow: 36px 36px 71px aliceblue, -36px -36px 71px #f4f4f4;
+  
+}
+.cont1 > .img1 {
+  height: 470px;
+  width: 550px;
+  /* background-color: red; */
+  /* padding-left: 30px; */
+  border-radius: 20px;
+  background-image: url("./Images/j6.webp");
+  background-position: center top;
+}
+.cont1 > .img2 {
+  height: 470px;
+  width: 550px;
+  /* background-color: red; */
+  /* padding-left: 30px; */
+  background-color: chartreuse;
+  border-radius: 20px;
+  background-image: url("./Images/j3.jpg");
+  background-position: center bottom;
+}
+
+
+.container {
+  height: 600px;
+  width: 1270px;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#banner1 > img {
+  height: 550px;
+  width: 100%;
+}
+
+
+.container1 {
+  height: 500px;
+  width: 1250px;
+  border-radius: 57px;
+background: #e0e0e0;
+box-shadow:  29px 29px 75px #b8b8b8,
+             -29px -29px 75px #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.container1>.sec1{
+  height: 500px;
+  width: 260px;
+  
+  border-radius: 10px;
+  background-image: url("./Images/p1.jpg");
+ background-size: cover;
+ background-position-x: center;
+ padding-left: 20px;
+ 
+}
+.container1>.sec2{
+  height: 500px;
+  width: 280px;
+  
+   border-radius: 10px;
+   background-image: url("./Images/pendels/p4.jpg");
+ background-size: cover;
+ background-position-x:right ;
+
+}
+.container1>.sec3{
+  height: 500px;
+  width: 280px;
+  
+   border-radius: 10px;
+   background-image: url("./Images/pendels/jw3.jpg");
+ background-size: cover;
+ background-position-x: center;
+
+}
+.container1>.sec4{
+  height: 500px;
+  width: 280px;
+  
+   border-radius: 10px;
+    background-image: url("./Images/pendels/oxide1.webp");
+ background-size: cover;
+ background-position-x: center;
+}
